@@ -28,13 +28,14 @@ body {
 .container {
     max-width: 600px;
     background-color: var(--white);
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     overflow: hidden;
 }
 
 .desktop-image {
     width: 100%;
+    min-height: fit-content;
     display: block;
 }
 
@@ -96,6 +97,32 @@ button {
     gap: 1em;
 }
 
+.mobile-image {
+    display: none;
+}
+
 button:hover {
 	background-color: var(--very-dark-blue);
+}
+
+@media screen and (max-width: 435px) {
+    .container {
+        display: block;
+        width: 75%;
+    }
+
+    .desktop-image {
+        display: none;
+    }
+
+    .mobile-image {
+        max-width: 100%;
+        display: block;
+    }
+
+    .details {
+        max-width: 100%;
+        gap: 1rem;
+    }
+
 }
