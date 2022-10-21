@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --cream: hsl(30, 38%, 92%);
+    --dark-cyan: hsl(158, 36%, 37%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cream);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: var(--dark-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    background-color: var(--white);
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+}
+
+.desktop-image {
+    width: 100%;
+    display: block;
+}
+
+.details {
+    display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
+    padding: 5%;
+    gap: 5%;
+}
+
+h1 {
+    color: var(--very-dark-blue);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: inherit;
+    font-weight: lighter;
+    font-size: 0.75rem;
+    letter-spacing: 0.5rem;
+}
+
+.description {
+    line-height: 1.5rem;
+}
+
+.price {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.current-price {
+    font-family: 'Fraunces', serif;
+    color: var(--dark-cyan);
+    font-size: 2rem;
+}
+
+.old-price {
+    text-decoration: line-through; 
+}
+
+button {
+    background-color: var(--dark-cyan);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    border-radius: 10px;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    gap: 1em;
+}
+
+button:hover {
+	background-color: var(--very-dark-blue);
+}
